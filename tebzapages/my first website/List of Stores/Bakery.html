@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to open an output stream, add some text, and close the output stream.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  document.open();
+  document.write("<h1>Hello World</h1>");
+  document.close();
+}
+</script>
+
+</body>
+</html>
+
+<html>
+<body> 
+@{
+if (IsPost) { 
+string companyname = Request["CompanyName"]; 
+string contactname = Request["ContactName"]; 
+<p>You entered: <br />
+Company Name: @companyname <br />
+Contact Name: @contactname </p>
+}
+else
+{
+<form method="post" action="">
+Company Name:<br />
+<input type="text" name="CompanyName" value="" /><br />
+Contact Name:<br />
+<input type="text" name="ContactName" value="" /><br /><br />
+<input type="submit" value="Submit" class="submit" />
+</form>
+}
+} 
+</body> 
+</html>
+<html>
+<body>
+<%
+set conn=Server.CreateObject("ADODB.Connection")
+conn.Provider="Microsoft.Jet.OLEDB.4.0"
+conn.Open "c:/webdata/northwind.mdb"
+set rs=Server.CreateObject("ADODB.Recordset")
+rs.open "SELECT * FROM customers",conn
+%>
+
+<h2>List Database</h2>
+<table border="1" width="100%">
+<tr>
+<%
+for each x in rs.Fields
+  response.write("<th>" & ucase(x.name) & "</th>")
+next
+%>
+</tr>
+<% do until rs.EOF %>
+<tr>
+<form method="post" action="demo_delete.asp">
+<%
+for each x in rs.Fields
+  if x.name="customerID" then%>
+    <td>
+    <input type="submit" name="customerID" value="<%=x.value%>">
+    </td>
+  <%else%>
+    <td><%Response.Write(x.value)%></td>
+  <%end if
+next
+%>
+</form>
+<%rs.MoveNext%>
+</tr>
+<%
+loop
+conn.close
+%>
+</table>
+
+</body>
+</html>
+@{
+var db = Database.Open("SmallBakery"); 
+var selectQueryString = "SELECT * FROM Product ORDER BY Name"; 
+}
+<html> 
+<body> 
+<h1>Small Bakery Products</h1> 
+<table> 
+<tr>
+<th>Id</th> 
+<th>Product</th> 
+<th>Description</th> 
+<th>Price</th> 
+</tr>
+@foreach(var row in db.Query(selectQueryString))
+{
+<tr> 
+<td>@row.Id</td> 
+<td>@row.Name</td> 
+<td>@row.Description</td> 
+<td align="right">@row.Price</td> 
+</tr> 
+}
+</table> 
+</body> 
+</html>
