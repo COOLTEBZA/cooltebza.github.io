@@ -1,0 +1,29 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... } 
+
+. 
+@media (max-width: @screen-xs-max) { ... }
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+@media (min-width: @screen-lg-min) { ... } 
+
+@media{Max-container-width;auto:}
+
+
+
+.fontsizetitle{text-decoration:none;}
+.fontsizea{text-decoration:none;background:rgba(0, 0, 255, 0.59);color:white;}
+.fontsizep{text-decoration:none;background:gold;}
+button{height:17px;background:lime;}
+p{font-size:14px;}
+body{display: block;
+    margin: 8px;}

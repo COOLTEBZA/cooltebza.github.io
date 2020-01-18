@@ -1,0 +1,68 @@
+<style>
+    .Terms {
+        border: none;
+        background: green;
+        width:55px;
+        border-radius:30px;
+        box-shadow: 0 0 11px 2px black;
+        color:;}
+
+	 .nump2{
+	width:55px;font-size:10px;
+		background: #31c331;
+        border-radius:30px;
+		box-shadow: 0 0 11px 2px black;
+		}
+		 .earthmetal{
+	width:55px;font-size:10px;
+		background: grey;
+        border-radius:30px;
+		box-shadow: 0 0 11px 2px black;
+		}
+.numtop{
+	width:40px;
+	height:40px;
+		background: gold;
+        border-radius:30px;
+		box-shadow: 0 0 11px 2px black;
+		}
+.nonmetal{width:55px;font-size:10px;
+		background: brown;
+        border-radius:30px;
+		box-shadow: 0 0 11px 2px black;color:white;}
+.metal{width:55px;font-size:10px;
+		    background: silver;
+        border-radius:30px;
+		box-shadow: 0 0 11px 2px black;}
+.numtop11{font-size:15px;font-style:bold;
+		}
+		
+.numtop11{	width:40px;
+		background:;
+        border-radius:30px;
+		box-shadow: 0 0 5px 0px black;
+		}
+		
+		.nump22{	width:40px;height:40px;
+		background:pink;
+        border-radius:30px;
+		box-shadow: 0 0 5px 0px black;
+		}
+
+.canvas {
+    border: 1px solid black;
+	
+}
+canvas {
+   
+	
+}
+transform: translateX(200px) rotate(15deg);
+
+.transform {
+  transform: rotate(15deg) translateX(200px);
+  height:111px;
+  width:10px;
+  background:black; border: 1px solid black;
+}
+</style>
