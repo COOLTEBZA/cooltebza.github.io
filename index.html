@@ -43,31 +43,24 @@
 <ul class="nav navbar-nav">
 <li class="active"><a href="#" class="fa fa-home"> Home<span class="sr-only">(current)</span></a></li>
 
-<li >
-
+<li class="dropdown">
+  <button onclick="myFunction()" class="dropbtn"id="output1"><span class="fa fa-exclamation" onclick="set1Function()" > Information <span class="fa fa-chevron-circle-down"></span></button>
   
-  
-  <div class="dropdown">
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+<a href="assets/blog.html">Blog</a>
+<a href="assets/about.html">About</a>
+<a href="assets/details.html">Contact details</a>
+<hr role="separator"class="divider"></hr>
+<a href="assets/profile.html">Portfolio</a>
+<a href="assets/partners.html">Partners</a>
+<a href="#tools">Tools</a>	
+<a href="#tools">Supporters</a>	 
+<a href="#base">Locations(Base)</a>
+<a href="#about">Credits</a>
+<a href="#custom">Customer care</a>    
 
-  <!--Trigger-->
-  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
-    aria-haspopup="true" aria-expanded="false" id="output1" ><span class="fa fa-exclamation" onclick="set1Function()" > Information <span class="fa fa-chevron-circle-down"></span></button>
-
-  <!--Menu-->
-  <div class="dropdown-menu dropdown-primary">
-<a class="dropdown-item"href="assets/blog.html">Blog</a>
-<a class="dropdown-item"href="assets/about.html">About</a>
-<a class="dropdown-item"href="assets/details.html">Contact details</a>
-<a class="dropdown-item"role="separator"class="divider"></a>
-<a class="dropdown-item"href="assets/profile.html">Portfolio</a>
-<a class="dropdown-item"href="assets/partners.html">Partners</a>
-<a class="dropdown-item"href="#tools">Tools</a>	
-<a class="dropdown-item"href="#tools">Supporters</a>	 
-<a class="dropdown-item"href="#base">Locations(Base)</a>
-<a class="dropdown-item"href="#about">Credits</a>
-<a class="dropdown-item"href="#custom">Customer care</a>  
   </div>
-</div>
 </li>
 </ul>
 
