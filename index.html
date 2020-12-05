@@ -17,17 +17,15 @@
 <link href="Language/English/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="Language/English/css/css.css" rel="stylesheet" type="text/css">
 <link type="text/css" rel="stylesheet" href="Language/English/css/font-awesome.min.css">
-<link type="text/css" rel="stylesheet" href="Language/English/css/dropdown.css">
+
   <script src="Language/English/js/jquery.min.js"></script>
   <script src="Language/English/js/bootstrap.min.js"></script>
-  <script src="Language/English/js/bootstrap.min.js"></script>
-  <script src="Language/English/js/dropdown.js"></script>
+
   
   
-  <!--nav-->
-<nav class="navbar navbar-default">
-<div class="container-fluid">
-<!--Brandandtogglegetgroupedforbettermobiledisplay-->
+  <!--nav left-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
 <div class="navbar-header">
 <button type="button"class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 <span class="sr-only">Togglenavigation</span>
@@ -35,58 +33,85 @@
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<a class="navbar-brand"href="cooltebzagithub.com"><img src="data:image/png;base64,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" alt="home"></a>
+<a href="https://cooltebza.github.io/"alt="Cooltebza Menu"><img src="data:image/png;base64,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" alt="home"></a>
 </div>
-<!--Collectthenavlinks,forms,andothercontentfortoggling-->
-<div class="collapse navbar-collapse"id="bs-example-navbar-collapse-1">
-<ul class="nav navbar-nav">
-<li class="active"><a href="#" class="fa fa-home"> Home<span class="sr-only">(current)</span></a></li>
-
-<li class="dropdown">
-  <button onclick="myFunction()" class="dropbtn"id="output1"><span class="fa fa-exclamation" onclick="set1Function()" > Information <span class="fa fa-chevron-circle-down"></span></button>
-  
-  <div id="myDropdown" class="dropdown-content">
-    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-<a href="assets/blog.html">Blog</a>
-<a href="assets/about.html">About</a>
-<a href="assets/details.html">Contact details</a>
-<hr role="separator"class="divider"></hr>
-<a href="assets/profile.html">Portfolio</a>
-<a href="assets/partners.html">Partners</a>
-<a href="#tools">Tools</a>	
-<a href="#tools">Supporters</a>	 
-<a href="#base">Locations(Base)</a>
-<a href="#about">Credits</a>
-<a href="#custom">Customer care</a>    
-
-  </div>
-</li>
-</ul>
-
+	<div class="collapse navbar-collapse"id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li><a href="index.html"class="dropdown-toggle fa fa-home dropdown lang" data-toggle="dropdown"  key="home" href="#menu" onclick="toggleChevron(this)" > Home 
+     <span class="fa fa-chevron-circle-down"></span>
+     </a>  
+	  
+	  </a>
+        <ul class="dropdown-menu">
+          <li><a href="menu/blog.html">Blog</a></li>
+          <li><a href="menu/about.html">About</a></li>
+          <li><a href="menu/contact.html">Contact</a></li> 
+        </ul>
+      </li>
+	  
+	  
+    <li><a class="dropdown-toggle  lang" data-toggle="dropdown"  onclick="toggleChevron(this)"   key="information" > Information 
+     <span class="fa fa-chevron-circle-down"></span>
+     </a>         
+	 <ul class="dropdown-menu">
+<li><a href="assets/blog.html" key="Blog" class="lang">Blog</a></li>
+<li><a href="assets/about.html" key="About" class="lang">About</a></li>
+<li><a href="assets/details.html" key="Contact details" class="lang">Contact details</a></li>
+<li role="separator"><hr class="divider"></hr></li>
+<li><a href="assets/profile.html" key="Portfolio" class="lang">Portfolio</a></li>
+<li><a href="assets/partners.html" key="Partners" class="lang">Partners</a></li>
+<li><a href="#tools" key="Tools" class="lang">Tools</a>	</li>
+<li><a href="#tools" key="Supporters" class="lang">Supporters</a>	</li> 
+<li><a href="#base" key="Locations" class="lang">Locations(Base)</a></li>
+<li><a href="#about" key="Credits" class="lang">Credits</a></li>
+<li><a href="#custom" key="Customer care" class="lang">Customer care</a> </li>
+     </ul>
+	</li> 
+	
+      <li><a class="dropdown-toggle  lang" data-toggle="dropdown"  onclick="toggleChevron(this)"   key="shopping" > Shopping
+     <span class="fa fa-chevron-circle-down"></span>
+     </a>           
+	    <ul class="dropdown-menu">
+           <li><a href="contact.html">Contact</a></li>
+		   <li><a href="contact.html">Contact</a></li>
+           <li><a href="contact.html">Contact</a></li>
+        </ul>
+	   </li> 
+    </ul>
+<!--nav right-->
 <ul class="nav navbar-nav navbar-right">
-<li><a href="#" id="user" list="VosloorusSA user"></a></li>
-
-
-<li class="dropdown">
-  <button  class="dropbtn"onclick="secFunction()" id="output"><span class="fa fa-gear " onclick="setFunction()"> Settings <span id="downiconarrow" class="fa fa-chevron-circle-down"></span></span></button>
-<div id="secDropdown" class="secdropdown-seccontent">
-<input type="text" placeholder="Search.." id="secInput" onkeyup="filterFunction()">
-<a href="#">Action</a>
-<a href="#">Profile</a>
-<a href="#">Theme</a>
-<hr role="separator"class="divider"></hr>
-<a href="#logout" onclick="logout()">Logout</a>
-<a href="#logout" onclick="clearValues()">Logout(clear)</a>
-  
-
-  </div>
+<li>
+<form class="navbar-form navbar-left"role="search">
+<div class="form-group">
+<input type="text"class="form-control"placeholder="Search" list="Languages">
+<datalist id="Languages">
+  <option value="PHP">
+  <option value="Perl">
+  <option value="Python">
+  <option value="Ruby">
+  <option value="C+">
+</datalist>
+</div>
+<button type="submit"class="btn btn-default">Search</button>
+</form>
 </li>
+<li><a href="#" id="user" list="VosloorusSA user"></a></li>
+ <li><a class="dropdown-toggle" data-toggle="dropdown  lang"  onclick="toggleChevron(this)"   key="settings" > Settings 
+     <span class="fa fa-chevron-circle-down"></span>
+     </a>         
+	 <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li> 
+     </ul>
+ </li> 
+
 
 </ul>
+
 </div><!--/.navbar-collapse-->
 </div><!--/.container-fluid-->
 </nav>
-
 
 </head>
 <body >
@@ -104,7 +129,158 @@
 
 <ul>
 <li>
- 
+ <script>
+
+
+var arrLang = new Array();
+arrLang['en'] = new Array();
+arrLang['bn'] = new Array();
+arrLang['zn'] = new Array();
+arrLang['sw'] = new Array();
+arrLang['af'] = new Array();
+arrLang['sd'] = new Array();
+arrLang['ts'] = new Array();
+arrLang['tn'] = new Array();
+arrLang['nd'] = new Array();
+arrLang['sn'] = new Array();
+arrLang['vn'] = new Array();
+arrLang['so'] = new Array();
+arrLang['xs'] = new Array();
+// English content
+arrLang['en']['home'] = 'Home';
+arrLang['en']['about'] = 'About Us';
+arrLang['en']['contact'] = 'Contact Us';
+arrLang['en']['link_portfolio'] = 'My Porfolio';
+arrLang['en']['information'] = 'Information';
+arrLang['en']['settings'] = 'Settings';
+
+// Khmer content (Cambodian Language)
+// Please change to your own language
+arrLang['bn']['home'] = 'হোম';
+arrLang['bn']['about'] = 'অ্যবাউট';
+arrLang['bn']['contact'] = 'যোগাযোগ';
+
+arrLang['bn']['link_portfolio'] = 'আমার ওয়েব সাইট';
+
+
+// Khmer content (Cambodian Language)
+// Please change to your own language zulu
+arrLang['zn']['home'] = ' Khaya';
+arrLang['zn']['about'] = ' Mayelana Ngathi';
+arrLang['zn']['contact'] = 'Iminini ngwane';
+
+arrLang['zn']['link_portfolio'] = 'i Profayeli lami';
+arrLang['zn']['information'] = ' Ulwazi';
+arrLang['zn']['settings'] = ' lungiso';
+
+
+// Please change to your own language xhosa
+arrLang['xs']['home'] = 'Khaya';
+arrLang['xs']['about'] = 'Mayelana Ngathi';
+arrLang['xs']['contact'] = 'Iminini ngwane';
+
+arrLang['xs']['link_portfolio'] = 'i Profayeli lami';
+arrLang['xs']['information'] = 'Lwazi';
+arrLang['xs']['settings'] = 'lungiso';
+
+// Please change to your own language swazi
+arrLang['sw']['home'] = 'Khaya';
+arrLang['sw']['about'] = 'Mayelana Ngathi';
+arrLang['sw']['contact'] = 'Iminini ngwane';
+
+arrLang['sw']['link_portfolio'] = 'i Profayeli lami';
+arrLang['sw']['information'] = 'Lwazi';
+arrLang['sw']['settings'] = 'lungiso';
+
+// Please change to your own language afrikaans
+arrLang['af']['home'] = 'Khaya';
+arrLang['af']['about'] = 'Mayelana Ngathi';
+arrLang['af']['contact'] = 'Iminini ngwane';
+
+arrLang['af']['link_portfolio'] = 'i Profayeli lami';
+arrLang['af']['information'] = 'Lwazi';
+arrLang['af']['settings'] = 'lungiso';
+
+// Please change to your own language spedi
+arrLang['sd']['home'] = 'Khaya';
+arrLang['sd']['about'] = 'Mayelana Ngathi';
+arrLang['sd']['contact'] = 'Iminini ngwane';
+
+arrLang['sd']['link_portfolio'] = 'i Profayeli lami';
+arrLang['sd']['information'] = 'Lwazi';
+arrLang['sd']['settings'] = 'lungiso';
+
+// Please change to your own language shangan
+arrLang['ts']['home'] = 'Khaya';
+arrLang['ts']['about'] = 'Mayelana Ngathi';
+arrLang['ts']['contact'] = 'Iminini ngwane';
+
+arrLang['ts']['link_portfolio'] = 'i Profayeli lami';
+arrLang['ts']['information'] = 'Lwazi';
+arrLang['ts']['settings'] = 'lungiso';
+
+// Please change to your own language tswana
+arrLang['tn']['home'] = 'Khaya';
+arrLang['tn']['about'] = 'Mayelana Ngathi';
+arrLang['tn']['contact'] = 'Iminini ngwane';
+
+arrLang['tn']['link_portfolio'] = 'i Profayeli lami';
+arrLang['tn']['information'] = 'Lwazi';
+arrLang['tn']['settings'] = 'lungiso';
+
+// Please change to your own language ndebele
+arrLang['nd']['home'] = 'Khaya';
+arrLang['nd']['about'] = 'Mayelana Ngathi';
+arrLang['nd']['contact'] = 'Iminini ngwane';
+
+arrLang['nd']['link_portfolio'] = 'i Profayeli lami';
+arrLang['nd']['information'] = 'Lwazi';
+arrLang['nd']['settings'] = 'lungiso';
+
+// Please change to your own language sotho
+arrLang['so']['home'] = 'Khaya';
+arrLang['so']['about'] = 'Mayelana Ngathi';
+arrLang['so']['contact'] = 'Iminini ngwane';
+
+arrLang['so']['link_portfolio'] = 'i Profayeli lami';
+arrLang['so']['information'] = 'Lwazi';
+arrLang['so']['settings'] = 'lungiso';
+
+// Please change to your own language venda
+arrLang['vn']['home'] = 'Khaya';
+arrLang['vn']['about'] = 'Mayelana Ngathi';
+arrLang['vn']['contact'] = 'Iminini ngwane';
+
+arrLang['vn']['link_portfolio'] = 'i Profayeli lami';
+arrLang['vn']['information'] = 'Lwazi';
+arrLang['vn']['settings'] = 'lungiso';
+
+// Please change to your own language sign language
+arrLang['sn']['home'] = '<img src="Khaya">';
+arrLang['sn']['about'] = 'Mayelana Ngathi';
+arrLang['sn']['contact'] = 'Iminini ngwane';
+
+arrLang['sn']['link_portfolio'] = 'i Profayeli lami';
+arrLang['sn']['information'] = 'ULwazi';
+arrLang['sn']['settings'] = 'lungiso';
+
+// Process translation
+$(function () {
+    $('.translate').click(function () {
+        var lang = $(this).attr('id');
+
+        $('.lang').each(function (index, item) {
+            $(this).text(arrLang[lang][$(this).attr('key')]);
+        });
+    });
+});
+  
+//changing icon or toggle
+window.toggleChevron = function(button) {
+    $(button).find('span').toggleClass('fa fa-chevron-circle-down fa fa-chevron-circle-up');
+}
+
+</script>
  
  <!--acception or verify-->
 
@@ -304,18 +480,22 @@ All Rights Reserved by Cooltebza © 2020, Inc. <a href="Language\English\assets\
 Choose a following South African Language:
 </div>
 
-<li class="active"><a href='english.html' class='lang'>English</a> </li>
+<li class="active">
+<a href='#english' id="en" class="translate lang">English</a> 
+</li>
 <li>
-<a href='afrikaans.html' class='lang'>Afrikaans</a> 
-<a href='sotho.html' class='lang'>Southern Sotho</a> 
-<a href='spedi.html' class='lang'>Northern Sotho(Spedi)</a> 
-<a href='tswana.html' class='lang'>Tswana</a> 
-<a href='zulu.html' class='lang'>isiZulu</a> 
-<a href='xhosa.html' class='lang'>Xhosa</a> 
-<a href='swati.html' class='lang'>Swati</a> 
-<a href='ndebele.html' class='lang'>Ndebele</a> 
-<a href='tsonga.html' class='lang'>Tsonga(Shangan)</a> 
-<a href='venda.html' class='lang'>Venda</a> 
+<a href='#afrikaans' id="af" class="translate lang">Afrikaans</a> 
+<a href='#Sotho'  id="so" class="translate lang">Southern Sotho</a> 
+<a href='#Spedi'  id="sd" class="translate lang">Northern Sotho(Sepedi)</a> 
+<a href='#Tswana'  id="tn" class="translate lang">Tswana</a> 
+<a href='#isiZulu'  id="zn" class="translate lang">isiZulu</a> 
+<a href='#xhosa'  id="xs" class="translate lang">Xhosa</a> 
+<a href='#swati'  id="sw" class="translate lang">Swati</a> 
+<a href='#ndebele'  id="nd" class="translate lang">Ndebele</a> 
+<a href='#tsonga'  id="ts" class="translate lang">Tsonga(Shangan)</a> 
+<a href='#venda'  id="vn" class="translate lang">Venda</a> 
+<a href='#sign'  id="sn" class="translate lang">Sign</a> 
+
 </li>
 </ul>
 </ul>
