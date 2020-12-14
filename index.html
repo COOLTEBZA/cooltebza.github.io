@@ -37,37 +37,35 @@
 </div>
 	<div class="collapse navbar-collapse"id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
-      <li><a class=" fa fa-home lang"  key="home" href="https://cooltebza.github.io/"> Home 
-     <span class="fa fa-chevron-circle-down"></span>
-     </a>  
+      <li><a class=" fa fa-home lang"  key="home" href="https://cooltebza.github.io/"> Home</a>  
       </li>
 	  
 	  
-    <li><a class="dropdown-toggle  lang" data-toggle="dropdown"  onclick="toggleChevron(this)"   key="information" > Information 
+    <li ><a class="dropdown-toggle  lang fa fa-list-alt " data-toggle="dropdown"  onclick="toggleChevron(this)"  key="information" ><button style="background: transparent;border:none;">Information 
      <span class="fa fa-chevron-circle-down"></span>
-     </a>         
+     </button></a>         
 	 <ul class="dropdown-menu">
-<li><a href="assets/blog.html" key="Blog" class="lang">Blog</a></li>
-<li><a href="assets/about.html" key="About" class="lang">About</a></li>
-<li><a href="assets/details.html" key="Contact details" class="lang">Contact details</a></li>
+<li><a href="Language\English\assets\blog.html" key="Blog" class="lang">Blog</a></li>
+<li><a href="Language\English\assets\about.html" key="About" class="lang">About</a></li>
+<li><a href="Language\English\assets\details.html" key="Contact details" class="lang">Contact details</a></li>
 <li role="separator"><hr class="divider"></hr></li>
-<li><a href="assets/profile.html" key="Portfolio" class="lang">Portfolio</a></li>
-<li><a href="assets/partners.html" key="Partners" class="lang">Partners</a></li>
-<li><a href="#tools" key="Tools" class="lang">Tools</a>	</li>
-<li><a href="#tools" key="Supporters" class="lang">Supporters</a>	</li> 
-<li><a href="#base" key="Locations" class="lang">Locations(Base)</a></li>
-<li><a href="#about" key="Credits" class="lang">Credits</a></li>
-<li><a href="#custom" key="Customer care" class="lang">Customer care</a> </li>
+<li><a href="Language\English\assets\profile.html" key="Portfolio" class="lang">Portfolio</a></li>
+<li><a href="Language\English\assets\partners.html" key="Partners" class="lang">Partners</a></li>
+<li><a href="#tools" key="Tools" class="lang"> Tools</a>	</li>
+<li><a href="#tools" key="Supporters" class="lang"> Supporters</a>	</li> 
+<li><a href="#base" key="Locations" class="lang"> Locations(Base)</a></li>
+<li><a href="#about" key="Credits" class="lang fa fa-credit-card "> Credits</a></li>
+<li><a href="#custom" key="Customer care" class="lang"> Customer care</a> </li>
      </ul>
 	</li> 
 	
-      <li><a class="dropdown-toggle  lang" data-toggle="dropdown"  onclick="toggleChevron(this)"   key="shopping" > Shopping
-     <span class="fa fa-chevron-circle-down"></span>
+      <li><a class="dropdown-toggle  lang fa fa-shopping-cart" data-toggle="dropdown"  onclick="toggleChevron(this)"   key="shopping" ><button style="background: transparent;border:none;"> Business 
+     <span class="fa fa-chevron-circle-down"></span> </button>
      </a>           
 	    <ul class="dropdown-menu">
-           <li><a href="contact.html">Contact</a></li>
-		   <li><a href="contact.html">Contact</a></li>
-           <li><a href="contact.html">Contact</a></li>
+           <li><a href="Language\English\assets\list_of_stores.html" class="fa fa-file" > List of Stores</a></li>
+		   <li><a href="Language\English\assets\list_of_banks.html"  class="fa fa-file"> List of Banks</a></li>
+		   <li><a href="Language\English\assets\Shopping.html" key="shopping" class="fa fa-shopping-cart"> Shopping</a></li>
         </ul>
 	   </li> 
     </ul>
@@ -88,18 +86,23 @@
 <button type="submit"class="btn btn-default">Search</button>
 </form>
 </li>
-<li><a href="#" id="user" list="VosloorusSA user"></a></li>
- <li><a class="dropdown-toggle lang" data-toggle="dropdown"  onclick="toggleChevron(this)"   key="settings" > Settings 
-     <span class="fa fa-chevron-circle-down"></span>
+<li><a href="#" id="user"class="fa fa-user" list="VosloorusSA user"></a></li>
+ <li><a class="dropdown-toggle lang fa fa-gear" data-toggle="dropdown"  onclick="toggleChevron(this)"   key="settings" ><button style="background: transparent;border:none;"> Settings 
+     <span class="fa fa-chevron-circle-down"></span> </button>
      </a>         
 	 <ul class="dropdown-menu">
-          <li><a href="#">Page 1-1</a></li>
-          <li><a href="#">Page 1-2</a></li>
-          <li><a href="#">Page 1-3</a></li> 
+          <li><a href="#"class="fa fa-user"> Profile</a></li>
+          <li><a href="#"class="fa fa-file"> Theme</a></li>
+          <li><a href="#"class="fa fa-list"> Menu</a></li> 
+		  <li><a href="#"class="fa fa-group"> Relatives</a></li>
+          <li><a href="#"class="fa fa-file"> Pages</a></li>
+		  <li><a href="#"class="fa fa-group"> Groups</a></li> 
+		  <li><a href="#"class="fa fa-group"> Friends</a></li>
+          <li><a href="#"class="fa fa-envelope"> Messages</a></li>
+          <li><a href="#"class="fa fa-sign-out"> Logout</a></li>
+     
      </ul>
  </li> 
-
-
 </ul>
 
 </div><!--/.navbar-collapse-->
@@ -123,6 +126,7 @@
 <ul>
 <li>
  <script>
+
 
 
 
@@ -323,7 +327,7 @@ return
 
 }
 function ser(){
-document.getElementById("user").innerHTML = localStorage.username;
+document.getElementById("user").innerHTML = " " + localStorage.username;
 }
 ser()
 </script>
@@ -343,6 +347,14 @@ body{font-family: "century-schoolbook";
     font-size: 15px;
     line-height: 1.42857143;
     color: white;}
+	.cmds{
+	color: black;
+	}
+	.cmds hover{color: blue;
+	}
+		.cmdz{
+	list-style-type: none;
+	}
 </style>
 
 <div>
@@ -365,20 +377,20 @@ body{font-family: "century-schoolbook";
 </div>
 </div>
 
-<div class="col-md-3">
-<div class="wrapper"style="background-color:#ecf0f1;padding:1em 2em;">
-<h3><strong>Commecials(AD's):</strong></h3>
-<ul>
-<li><a href="#">latest news from Earth (Space)</a></li>
-<li><a href="#">latest games</a></li>
-<li><a href="#">latest apps (Softwares)</a></li>
-<li><a href="#">latest Music (Audio)</a></li>
-<li><a href="#">latest Films (Videos)</a></li>
-<li><a href="#">latest Education and Skills</a></li>
-<li><a href="#">latest Crimes (Corruption)</a></li>
-<li><a href="#">latest Sports</a></li>
-<li><a href="#">latest Discovery (Technology)</a></li>
-<li><a href="#">latest How to (Fix)</a></li>
+<div class="col-md-3 ">
+<div class="wrapper"style="background-color:#ecf0f1;">
+<strong class="btn btn-warning" style="width: 100%;font-size: 20px ;color: black;">Commecials(AD's):</strong>
+<ul class="cmdz">
+<li><a href="#" class="cmds">latest news from Earth (Space)</a></li>
+<li><a href="#" class="cmds">latest games</a></li>
+<li><a href="#" class="cmds">latest apps (Softwares)</a></li>
+<li><a href="#" class="cmds">latest Music (Audio)</a></li>
+<li><a href="#" class="cmds">latest Films (Videos)</a></li>
+<li><a href="#" class="cmds">latest Education and Skills</a></li>
+<li><a href="#" class="cmds">latest Crimes (Corruption)</a></li>
+<li><a href="#" class="cmds">latest Sports</a></li>
+<li><a href="#" class="cmds">latest Discovery (Technology)</a></li>
+<li><a href="#" class="cmds">latest How to (Fix)</a></li>
 </ul>
 </div>
 </div>
@@ -393,37 +405,38 @@ body{font-family: "century-schoolbook";
 <div class="container"style="padding-left:0">
 <div class="row">
 <div class="col-md-6">
-<div class="wrapper"style="background-color:#ecf0f1;padding:1em 2em;">
-<h3><strong>Quick Links:</strong></h3>
-<ul>
-<li><a href="#Home">Home</a></li>
-<li><a href="#Portfolio">Portfolio</a></li>
-<li><a href="#About">About</a></li>
-<li><a href="#Partners">Partners</a></li>
-<li><a href="#Designed by Tebogo">Author</a></li>
-<li><a href="#Disclaimer">Disclaimer</a></li>
-<li><a href="#Credits">Credits</a></li>
+<div class="wrapper"style="background-color:#ecf0f1;">
+<strong class="btn btn-warning" style="width: 100%;font-size: 20px ;color: black;">Quick Links:</strong>
+<ul class="cmdz">
+<li><a href="#Home" class="cmds">Home</a></li>
+<li><a href="#Portfolio" class="cmds">Portfolio</a></li>
+<li><a href="#About" class="cmds">About</a></li>
+<li><a href="#Partners" class="cmds">Partners</a></li>
+<li><a href="#Designed by Tebogo" class="cmds">Author</a></li>
+<li><a href="#Disclaimer" class="cmds">Disclaimer</a></li>
+<li><a href="#Credits" class="cmds">Credits</a></li>
 </ul>
 </div>
 </div>
 
 <div class="col-md-6">
-<div class="wrapper"style="background-color:#ecf0f1;padding:1em 2em;">
-<h3><strong>Follow Us:</strong></h3>
-<ul>
-<li><a href="#">Facebook</a></li>
-<li><a href="#">Twitter</a></li>
-<li><a href="#">Instagram</a></li>
-<li><a href="#">Youtube</a></li>
-<li><address><a href = "mailto:tsstebza@gmail.com">Email Us</a></address></li>
+<div class="wrapper"style="background-color:#ecf0f1;">
+<strong class="btn btn-warning" style="width: 100%;font-size: 20px ;color: black;">Follow Us:</strong>
+<ul class="cmdz">
+<li><a href="#" class="cmds">Facebook</a></li>
+<li><a href="#" class="cmds">Twitter</a></li>
+<li><a href="#" class="cmds">Instagram</a></li>
+<li><a href="#" class="cmds">Youtube</a></li>
+<li><address><a  class="cmds"href = "mailto:tsstebza@gmail.com">Email Us</a></address></li>
 </ul>
 </div>
 </div>
 </div>
 <div class="row"style="text-align:center;padding:1em;margin:1em 0;background-color  :#ecf0f1;">
-All Rights Reserved by Cooltebza © 2020, Inc. <a href="Language\English\assets\Terms & Privacy Conditions.html">Terms & Privacy Conditions. </a> | <a href="Language\English\assets\security.html">Security</a>
+<a href="Language\English\assets\copyright.html">Copyright © 2020 The Cooltebza Authors. All Rights Reserved, Inc. </a>
+ | <a href="Language\English\assets\Terms & Privacy Conditions.html">Terms & Privacy Conditions. </a> | <a href="Language\English\assets\security.html">Security</a>
 </div>
-<div class="row"style="text-align:center;padding:1em;margin:1em 0;background-color  :#ecf0f1;">
+<div class="row"style="text-align:center;margin:1em 0;background-color  :#ecf0f1;">
 <ul class="pager">
 
 
@@ -471,7 +484,7 @@ All Rights Reserved by Cooltebza © 2020, Inc. <a href="Language\English\assets\
 </ul>
 
 <ul class="pagination">
-<div>
+<div class="btn btn-warning" style="width: 100%;font-size: 20px ;color: black;">
 Choose a following South African Language:
 </div>
 
@@ -480,23 +493,26 @@ Choose a following South African Language:
 </li>
 <li>
 <a href='#afrikaans' id="af" class="translate lang">Afrikaans</a> 
-<a href='#Sotho'  id="so" class="translate lang">Southern Sotho</a> 
-<a href='#Spedi'  id="sd" class="translate lang">Northern Sotho(Sepedi)</a> 
-<a href='#Tswana'  id="tn" class="translate lang">Tswana</a> 
-<a href='#isiZulu'  id="zn" class="translate lang">isiZulu</a> 
-<a href='#xhosa'  id="xs" class="translate lang">Xhosa</a> 
-<a href='#swati'  id="sw" class="translate lang">Swati</a> 
-<a href='#ndebele'  id="nd" class="translate lang">Ndebele</a> 
-<a href='#tsonga'  id="ts" class="translate lang">Tsonga(Shangan)</a> 
-<a href='#venda'  id="vn" class="translate lang">Venda</a> 
+<a href='#Sotho'  id="so" class="translate lang">SeSotho(Southern Sotho)</a> 
+<a href='#Spedi'  id="sd" class="translate lang">SePedi(Northern Sotho)</a> 
+<a href='#Tswana'  id="tn" class="translate lang">SeTswana</a> 
+<a href='#Zulu'  id="zn" class="translate lang">IsiZulu</a> 
+<a href='#xhosa'  id="xs" class="translate lang">IsiXhosa</a> 
+<a href='#swati'  id="sw" class="translate lang">Siswati</a> 
+<a href='#ndebele'  id="nd" class="translate lang">IsiNdebele</a> 
+<a href='#tsonga'  id="ts" class="translate lang">Xitsonga(Shangan)</a> 
+<a href='#venda'  id="vn" class="translate lang">Tshivenḓa</a> 
 <a href='#sign'  id="sn" class="translate lang">Sign</a> 
-
+ <a href='#sign'  id="sn" class="translate lang">other(unknown yet)</a>          
 </li>
 </ul>
 </ul>
 </div>
 </div>
 </footer>
+
+
+
 </body>
 </html>
 
