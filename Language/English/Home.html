@@ -376,10 +376,36 @@ document.getElementById("resultinput").click();
 <p>
  <div class="well">
 <ul style="list-style-type: none;">
-<li><span class="btn btn-default btn-sm"style="width:100%;"><h4>POST</h4></span></li>
+<li><span class="btn btn-default btn-sm"style="width:100%;"><h4>Facebook</h4></span></li>
 <li>•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••</li>
-<li><b>I don't own most of the lecture,Artwork or music used.All the credits goes to their respective owners!!,No copyrights infringement is intended!!</b></li>
-<li><b>The information presented in this post is not guaranteed to be correct nor accurate ,use at your own risk,For those with educational background with adult supervision.</b></li>
+<li><b></b></li>
+<li><b><!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "1615279952070070");
+      chatbox.setAttribute("attribution", "page_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script></b></li>
 </ul>
   </div>
 </p>
