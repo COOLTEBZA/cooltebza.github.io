@@ -111,25 +111,7 @@ var cTemplate =`<div class="flex-container">
 
     <fieldset><legend><h4>Choose a following South African Language:</h4></legend><br>
     <table> 
-<tr><th class="ul">
-
-<li class="li"><a href='#english' id="en"  onclick="sEn()" class="translate a">English</a></li>
-<li class="li"><a href='#afrikaans' id="af"  onclick="sAfri()" class="translate a">Afrikaans</a></li> 
-<li class="li"><a href='#Sotho'  id="so"  onclick="sSo()" class="translate a">SeSotho(Southern Sotho)</a></li> 
-<li class="li"><a href='#Spedi'  id="sd"  onclick="sSd()" class="translate a">SePedi(Northern Sotho)</a></li> 
-<li class="li"><a href='#Tswana'  id="tn"  onclick="sTn()" class="translate a">SeTswana</a></li> 
-<li class="li"><a href='#Zulu'  id="zn"  onclick="sZn()" class="translate a">IsiZulu</a></li> 
-<li class="li"><a href='#xhosa'  id="xs"  onclick="sXs()" class="translate a">IsiXhosa</a></li> 
-<li class="li"><a href='#swati'  id="sw"  onclick="sSw()" class="translate a">Siswati</a></li> 
-<li class="li"><a href='#ndebele'  id="nd"  onclick="sNd()" class="translate a">IsiNdebele</a></li> 
-<li class="li"><a href='#tsonga'  id="ts"  onclick="sTs()" class="translate a">Xitsonga(Shangan)</a></li> 
-<li class="li"><a href='#venda'  id="vn"  onclick="sVn()" class="translate a">TshiVenda</a></li> 
-<li class="li"><a href='#sign'  id="sn"  onclick="sSn()" class="translate a">Sign</a></li> 
-<li class="li"><a href='#khoi'  id="khoi"  onclick="sKhoi()" class="translate a">Khoisan</a></li>
-<li class="li"><a href='#other'  id="oth"  onclick="sOth()" class="translate a">Other Langs(unknown yet)</a></li>
-
-
-</th></tr>
+<tr><th class="ul" id="loadBtns"></th></tr>
      
       
 
