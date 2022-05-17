@@ -1,0 +1,218 @@
+
+
+.ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	margin-bottom: 14px;
+    box-shadow: 0px 5px 17px 3px black;
+	
+    
+}
+
+.li {
+
+    float: left;
+}
+.li1 {
+
+    float: right;
+}
+.li .a, 
+.dropbtn,
+.dropbtn1,
+.dropbtn2,
+.dropbtn3,
+.dropbtn4 {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.li .a:hover, 
+.dropdown:hover .dropbtn,
+.dropdown1:hover .dropbtn,
+.dropdown2:hover .dropbtn,
+.dropdown3:hover .dropbtn,
+.dropdown4:hover .dropbtn {
+     background-color: rgba(121, 85, 72, 0.71);
+	 box-shadow: inset -34px 0px 52px -7px #3F51B5;
+}
+
+.li.dropdown,
+.li.dropdown1,
+.li.dropdown2,
+.li.dropdown3,
+.li.dropdown4 {
+    display: inline-block;
+}
+
+.dropdown-content,
+.dropdown1-content,
+.dropdown2-content,
+.dropdown3-content,
+.dropdown4-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+	overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	
+}
+
+.dropdown-content .a,
+.dropdown1-content .a,
+.dropdown2-content .a,
+.dropdown3-content .a,
+.dropdown4-content .a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	
+}
+
+.dropdown-content .a:hover,
+.dropdown1-content .a:hover,
+.dropdown2-content .a:hover ,
+.dropdown3-content .a:hover ,
+.dropdown4-content .a:hover{background-color: #f1f1f1}
+
+
+
+
+.show {display:block;}
+
+.active {
+    background-color: purple;
+    box-shadow: inset -34px 0px 52px -7px black;
+}
+
+.logo{
+	padding: 0px;
+	margin:0px;
+	height:19px;width:89px;
+}
+.logo{
+	position:relative;
+	padding: 20px 0px;
+	margin:0px;
+	height:19px;width:89px;
+}
+.logo:hover{
+	background-color: rgba(121, 85, 72, 0.71);box-shadow: inset -34px 0px 52px -7px #3F51B5;
+	
+}
+
+.class{width:100%;}
+
+@media only screen and (max-width: 400px) {
+	.li {
+    float: left;
+     }
+	 #myDropdown4{
+	left:-10px;background-color: brown;max-width: 100%;
+}
+#myDropdown,#myDropdown1,#myDropdown2,#myDropdown3{
+	background-color: brown;max-width: 100%;
+}
+
+ .dropdown-content,
+ .dropdown1-content,
+ .dropdown2-content,
+ .dropdown3-content {
+    width: 100%;
+}
+
+.li .a, 
+.dropbtn,
+.dropbtn1,
+.dropbtn2,
+.dropbtn3,
+.dropbtn4 {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 158px;
+    text-decoration: none;
+}
+}
+
+.npBtnsDiv {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	margin-bottom: 14px;
+    box-shadow: 0px 5px 17px 3px black;
+}
+
+.npBtns {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	background-color: purple;
+    box-shadow: inset -34px 0px 52px -7px black;
+	font-weight: bold;
+	
+}
+
+.npBtns:hover, .qui1 .quicks:hover {
+	cursor: pointer;
+     background-color: rgba(121, 85, 72, 0.71);
+	 box-shadow: inset -34px 0px 52px -7px #3F51B5;
+}
+
+.npbtn2 {
+	margin-top: 10px;
+	margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+.qui1{
+	list-style-type: none;
+	float: left;
+}
+
+
+.qui1 .quicks{
+	
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	margin-bottom: 4px;
+    box-shadow: 0px 5px 17px 3px black;
+	width:100%;
+	height:4%;
+	color:white;
+	font-weight: bold;
+	
+}
+.qbtn{
+
+    background-color: #000;
+
+	
+}
+/*
+
+
+
+
+
+*/
+
+
+
+
+
