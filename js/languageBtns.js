@@ -3,20 +3,20 @@ for(var i = 0; i < 14; i++){
       }
 
 var showBtn = [
-"<button id='SignLanguage'>Sign Language</button>",   
-"<button id='ZuluLanguage'>Zulu</button>",
-"<button id='SepediLanguage'>SePedi(Northern Sotho)</button>", 
-"<button id='ShanganeLanguage'>Shangane(Tsonga)</button>",  
-"<button id='NdebeleLanguage'>Ndebele</button>",
-"<button id='AfrikaansLanguage'>Afrikaans</button>",
-"<button id='SothoLanguage'>Sotho(Southern Sotho)</button>",  
-"<button id='TswanaLanguage'>Tswana</button>", 
-"<button id='XhosaLanguage'>Xhosa</button>",
-"<button id='SwatiLanguage'>Swati</button>",  
-"<button id='VenḓaLanguage'>Venḓa</button>", 
-"<button id='KhoisanLanguage'>Khoisan</button>", 
-"<button id='EnglishLanguage'>English</button>",
-"<button id='OtherLanguages'>Other</button>" 
+"<li class='li'><button id='SignLanguage' class='lang a'>Sign Language</button></li>",   
+"<li class='li'><button id='ZuluLanguage' class='lang a'>Zulu</button></li>",
+"<li class='li'><button id='SepediLanguage' class='lang a'>SePedi(Northern Sotho)</button></li>", 
+"<li class='li'><button id='ShanganeLanguage' class='lang a'>Shangane(Tsonga)</button></li>",  
+"<li class='li'><button id='NdebeleLanguage' class='lang a'>Ndebele</button></li>",
+"<li class='li'><button id='AfrikaansLanguage' class='lang a'>Afrikaans</button></li>",
+"<li class='li'><button id='SothoLanguage' class='lang a'>Sotho(Southern Sotho)</button></li>",  
+"<li class='li'><button id='TswanaLanguage' class='lang a'>Tswana</button></li>", 
+"<li class='li'><button id='XhosaLanguage' class='lang a'>Xhosa</button></li>",
+"<li class='li'><button id='SwatiLanguage' class='lang a'>Swati</button></li>",  
+"<li class='li'><button id='VenḓaLanguage' class='lang a'>Venḓa</button></li>", 
+"<li class='li'><button id='KhoisanLanguage' class='lang a'>Khoisan</button></li>", 
+"<li class='li'><button id='EnglishLanguage' class='lang a'>English</button></li>",
+"<li class='li'><button id='OtherLanguages' class='lang a'>Other</button></li>" 
 ];
 let langBtn0 = document.getElementById("SignLanguage");
 let langBtn1 = document.getElementById("ZuluLanguage");
