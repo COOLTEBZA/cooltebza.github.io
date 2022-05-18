@@ -1,7 +1,3 @@
-for(var i = 0; i < 14; i++){
-    document.getElementById("loadBtns").innerHTML += showBtn[i];  
-      }
-
 var showBtn = [
 "<li class='li'><button id='SignLanguage' class='lang a'>Sign Language</button></li>",   
 "<li class='li'><button id='ZuluLanguage' class='lang a'>Zulu</button></li>",
@@ -18,6 +14,11 @@ var showBtn = [
 "<li class='li'><button id='EnglishLanguage' class='lang a'>English</button></li>",
 "<li class='li'><button id='OtherLanguages' class='lang a'>Other</button></li>" 
 ];
+for(var i = 0; i < 14; i++){
+    document.getElementById("loadBtns").innerHTML += showBtn[i];  
+      }
+
+
 let langBtn0 = document.getElementById("SignLanguage");
 let langBtn1 = document.getElementById("ZuluLanguage");
 let langBtn2 = document.getElementById("SepediLanguage");
