@@ -10,7 +10,7 @@ var cNav = `
           <a href="javascript:void(0)" class="a dropbtn" onclick="myFunction()">Information System</a>
             <div class="dropdown-content" id="myDropdown">
              <a class="a" href="#">Education Sector</a>
-              <a class="a"  id="about" onclick="c_dictionary()">Dictionary Sector</a>
+              <a class="a"  id="dictionary" onclick="c_dictionary()">Dictionary Sector</a>
               <a class="a" href="#">Cultural Sector</a>
 			  <a class="a" href="#">Traditional Sector</a>
 			  <a class="a" href="#">Social Sector</a>
@@ -47,4 +47,5 @@ var cNav = `
         </ul>
 
 `;
+
 
