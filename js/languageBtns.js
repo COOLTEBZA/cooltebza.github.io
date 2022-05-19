@@ -1,19 +1,20 @@
 var showBtn = [
-"<li class='li'><button id='SignLanguage' class='lang a'>Sign Language</button></li>",   
-"<li class='li'><button id='ZuluLanguage' class='lang a'>Zulu</button></li>",
-"<li class='li'><button id='SepediLanguage' class='lang a'>SePedi(Northern Sotho)</button></li>", 
-"<li class='li'><button id='ShanganeLanguage' class='lang a'>Shangane(Tsonga)</button></li>",  
-"<li class='li'><button id='NdebeleLanguage' class='lang a'>Ndebele</button></li>",
-"<li class='li'><button id='AfrikaansLanguage' class='lang a'>Afrikaans</button></li>",
-"<li class='li'><button id='SothoLanguage' class='lang a'>Sotho(Southern Sotho)</button></li>",  
-"<li class='li'><button id='TswanaLanguage' class='lang a'>Tswana</button></li>", 
-"<li class='li'><button id='XhosaLanguage' class='lang a'>Xhosa</button></li>",
-"<li class='li'><button id='SwatiLanguage' class='lang a'>Swati</button></li>",  
-"<li class='li'><button id='VenḓaLanguage' class='lang a'>Venḓa</button></li>", 
-"<li class='li'><button id='KhoisanLanguage' class='lang a'>Khoisan</button></li>", 
-"<li class='li'><button id='EnglishLanguage' class='lang a'>English</button></li>",
-"<li class='li'><button id='OtherLanguages' class='lang a'>Other</button></li>" 
+"<li class='li'><button id='SignLanguage' class='lang'>Sign Language</button></li>",   
+"<li class='li'><button id='ZuluLanguage' class='lang'>Zulu</button></li>",
+"<li class='li'><button id='SepediLanguage' class='lang'>SePedi(Northern Sotho)</button></li>", 
+"<li class='li'><button id='ShanganeLanguage' class='lang'>Shangane(Tsonga)</button></li>",  
+"<li class='li'><button id='NdebeleLanguage' class='lang'>Ndebele</button></li>",
+"<li class='li'><button id='AfrikaansLanguage' class='lang'>Afrikaans</button></li>",
+"<li class='li'><button id='SothoLanguage' class='lang'>Sotho(Southern Sotho)</button></li>",  
+"<li class='li'><button id='TswanaLanguage' class='lang'>Tswana</button></li>", 
+"<li class='li'><button id='XhosaLanguage' class='lang'>Xhosa</button></li>",
+"<li class='li'><button id='SwatiLanguage' class='lang'>Swati</button></li>",  
+"<li class='li'><button id='VendaLanguage' class='lang'>Venda</button></li>", 
+"<li class='li'><button id='KhoisanLanguage' class='lang'>Khoisan</button></li>", 
+"<li class='li'><button id='EnglishLanguage' class='lang'>English</button></li>",
+"<li class='li'><button id='OtherLanguages' class='lang'>Other</button></li>" 
 ];
+
 for(var i = 0; i < 14; i++){
     document.getElementById("loadBtns").innerHTML += showBtn[i];  
       }
@@ -29,7 +30,7 @@ let langBtn6 = document.getElementById("SothoLanguage");
 let langBtn7 = document.getElementById("TswanaLanguage");
 let langBtn8 = document.getElementById("XhosaLanguage");
 let langBtn9 = document.getElementById("SwatiLanguage");
-let langBtn10 = document.getElementById("VenḓaLanguage");
+let langBtn10 = document.getElementById("VendaLanguage");
 let langBtn11 = document.getElementById("KhoisanLanguage");
 let langBtn12 = document.getElementById("EnglishLanguage");
 let langBtn13 = document.getElementById("OtherLanguages");
@@ -64,7 +65,7 @@ if(localStorage.langStored == "Xhosa"){
 if(localStorage.langStored == "Swati"){
 	langBtn9.className = localStorage.langStored;
 }  
-if(localStorage.langStored == "Venḓa" ){
+if(localStorage.langStored == "Venda" ){
 	langBtn10.className = localStorage.langStored;
 }
 if(localStorage.langStored == "Khoisan"){
@@ -83,243 +84,248 @@ langBtn0.addEventListener("click", function(){
   
   localStorage.langStored = "Sign"; 
   langBtn0.className = localStorage.langStored;
- langBtn1.removeAttribute('class', 'Zulu');
- langBtn2.removeAttribute('class', 'SePedi');
- langBtn3.removeAttribute('class', 'Shangane');
- langBtn4.removeAttribute('class', 'Ndebele');
- langBtn5.removeAttribute('class', 'Afrikaans');
- langBtn6.removeAttribute('class', 'Sotho');
- langBtn7.removeAttribute('class', 'Tswana');
- langBtn8.removeAttribute('class', 'Xhosa');
- langBtn9.removeAttribute('class', 'Swati');
- langBtn10.removeAttribute('class', 'Venḓa');
- langBtn11.removeAttribute('class', 'Khoisan');
- langBtn12.removeAttribute('class', 'English');
- langBtn13.removeAttribute('class', 'other');
+ langBtn1.className= 'lang';
+ langBtn2.className= 'lang';
+ langBtn3.className= 'lang';
+ langBtn4.className= 'lang';
+ langBtn5.className= 'lang';
+ langBtn6.className= 'lang';
+ langBtn7.className= 'lang';
+ langBtn8.className= 'lang';
+ langBtn9.className= 'lang';
+ langBtn10.className= 'lang';
+ langBtn11.className= 'lang';
+ langBtn12.className= 'lang';
+ langBtn13.className= 'lang';
 } );
 langBtn1.addEventListener("click", function(){
   localStorage.langStored = "Zulu"; 
   langBtn1.className = localStorage.langStored;
  
- langBtn0.removeAttribute('class', 'Sign');
- langBtn2.removeAttribute('class', 'SePedi');
- langBtn3.removeAttribute('class', 'Shangane');
- langBtn4.removeAttribute('class', 'Ndebele');
- langBtn5.removeAttribute('class', 'Afrikaans');
- langBtn6.removeAttribute('class', 'Sotho');
- langBtn7.removeAttribute('class', 'Tswana');
- langBtn8.removeAttribute('class', 'Xhosa');
- langBtn9.removeAttribute('class', 'Swati');
- langBtn10.removeAttribute('class', 'Venḓa');
- langBtn11.removeAttribute('class', 'Khoisan');
- langBtn12.removeAttribute('class', 'English');
- langBtn13.removeAttribute('class', 'other');
-
+ langBtn0.className= 'lang';
+ langBtn2.className= 'lang';
+ langBtn3.className= 'lang';
+ langBtn4.className= 'lang';
+ langBtn5.className= 'lang';
+ langBtn6.className= 'lang';
+ langBtn7.className= 'lang';
+ langBtn8.className= 'lang';
+ langBtn9.className= 'lang';
+ langBtn10.className= 'lang';
+ langBtn11.className= 'lang';
+ langBtn12.className= 'lang';
+ langBtn13.className= 'lang';
 
 } );
 langBtn2.addEventListener("click", function(){
   localStorage.langStored = "SePedi";  
   langBtn2.className = localStorage.langStored;
- langBtn0.removeAttribute('class', 'Sign');
- langBtn1.removeAttribute('class', 'Zulu');
- langBtn3.removeAttribute('class', 'Shangane');
- langBtn4.removeAttribute('class', 'Ndebele');
- langBtn5.removeAttribute('class', 'Afrikaans');
- langBtn6.removeAttribute('class', 'Sotho');
- langBtn7.removeAttribute('class', 'Tswana');
- langBtn8.removeAttribute('class', 'Xhosa');
- langBtn9.removeAttribute('class', 'Swati');
- langBtn10.removeAttribute('class', 'Venḓa');
- langBtn11.removeAttribute('class', 'Khoisan');
- langBtn12.removeAttribute('class', 'English');
- langBtn13.removeAttribute('class', 'other');
+ langBtn0.className = 'lang';
+ langBtn1.className= 'lang';
+
+ langBtn3.className= 'lang';
+ langBtn4.className= 'lang';
+ langBtn5.className= 'lang';
+ langBtn6.className= 'lang';
+ langBtn7.className= 'lang';
+ langBtn8.className= 'lang';
+ langBtn9.className= 'lang';
+ langBtn10.className= 'lang';
+ langBtn11.className= 'lang';
+ langBtn12.className= 'lang';
+ langBtn13.className= 'lang';
 } );
 langBtn3.addEventListener("click", function(){
   localStorage.langStored = "Shangane"; 
   langBtn3.className = localStorage.langStored;
- langBtn0.removeAttribute('class', 'Sign');
- langBtn1.removeAttribute('class', 'Zulu');
- langBtn2.removeAttribute('class', 'SePedi');
- langBtn4.removeAttribute('class', 'Ndebele');
- langBtn5.removeAttribute('class', 'Afrikaans');
- langBtn6.removeAttribute('class', 'Sotho');
- langBtn7.removeAttribute('class', 'Tswana');
- langBtn8.removeAttribute('class', 'Xhosa');
- langBtn9.removeAttribute('class', 'Swati');
- langBtn10.removeAttribute('class', 'Venḓa');
- langBtn11.removeAttribute('class', 'Khoisan');
- langBtn12.removeAttribute('class', 'English');
- langBtn13.removeAttribute('class', 'other');
+ langBtn0.className = 'lang';
+ langBtn1.className= 'lang';
+ langBtn2.className= 'lang';
+
+ langBtn4.className= 'lang';
+ langBtn5.className= 'lang';
+ langBtn6.className= 'lang';
+ langBtn7.className= 'lang';
+ langBtn8.className= 'lang';
+ langBtn9.className= 'lang';
+ langBtn10.className= 'lang';
+ langBtn11.className= 'lang';
+ langBtn12.className= 'lang';
+ langBtn13.className= 'lang';
 } );
 langBtn4.addEventListener("click", function(){
   localStorage.langStored = "Ndebele"; 
   langBtn4.className = localStorage.langStored;
- langBtn0.removeAttribute('class', 'Sign');
- langBtn1.removeAttribute('class', 'Zulu');
- langBtn2.removeAttribute('class', 'SePedi');
- langBtn3.removeAttribute('class', 'Shangane');
- langBtn5.removeAttribute('class', 'Afrikaans');
- langBtn6.removeAttribute('class', 'Sotho');
- langBtn7.removeAttribute('class', 'Tswana');
- langBtn8.removeAttribute('class', 'Xhosa');
- langBtn9.removeAttribute('class', 'Swati');
- langBtn10.removeAttribute('class', 'Venḓa');
- langBtn11.removeAttribute('class', 'Khoisan');
- langBtn12.removeAttribute('class', 'English');
- langBtn13.removeAttribute('class', 'other');
+langBtn0.className = 'lang';
+ langBtn1.className= 'lang';
+ langBtn2.className= 'lang';
+ langBtn3.className= 'lang';
+
+ langBtn5.className= 'lang';
+ langBtn6.className= 'lang';
+ langBtn7.className= 'lang';
+ langBtn8.className= 'lang';
+ langBtn9.className= 'lang';
+ langBtn10.className= 'lang';
+ langBtn11.className= 'lang';
+ langBtn12.className= 'lang';
+ langBtn13.className= 'lang';
 } );
 langBtn5.addEventListener("click", function(){
   localStorage.langStored = "Afrikaans"; 
   langBtn5.className = localStorage.langStored;
- langBtn0.removeAttribute('class', 'Sign');
- langBtn1.removeAttribute('class', 'Zulu');
- langBtn2.removeAttribute('class', 'SePedi');
- langBtn3.removeAttribute('class', 'Shangane');
- langBtn4.removeAttribute('class', 'Ndebele');
- langBtn6.removeAttribute('class', 'Sotho');
- langBtn7.removeAttribute('class', 'Tswana');
- langBtn8.removeAttribute('class', 'Xhosa');
- langBtn9.removeAttribute('class', 'Swati');
- langBtn10.removeAttribute('class', 'Venḓa');
- langBtn11.removeAttribute('class', 'Khoisan');
- langBtn12.removeAttribute('class', 'English');
- langBtn13.removeAttribute('class', 'other');
+langBtn0.className = 'lang';
+ langBtn1.className= 'lang';
+ langBtn2.className= 'lang';
+ langBtn3.className= 'lang';
+ langBtn4.className= 'lang';
+ langBtn6.className= 'lang';
+ langBtn7.className= 'lang';
+ langBtn8.className= 'lang';
+ langBtn9.className= 'lang';
+ langBtn10.className= 'lang';
+ langBtn11.className= 'lang';
+ langBtn12.className= 'lang';
+ langBtn13.className= 'lang';
 } );
 langBtn6.addEventListener("click", function(){
   localStorage.langStored = "Sotho"; 
   langBtn6.className = localStorage.langStored;
- langBtn0.removeAttribute('class', 'Sign');
- langBtn1.removeAttribute('class', 'Zulu');
- langBtn2.removeAttribute('class', 'SePedi');
- langBtn3.removeAttribute('class', 'Shangane');
- langBtn4.removeAttribute('class', 'Ndebele');
- langBtn5.removeAttribute('class', 'Afrikaans');
- langBtn7.removeAttribute('class', 'Tswana');
- langBtn8.removeAttribute('class', 'Xhosa');
- langBtn9.removeAttribute('class', 'Swati');
- langBtn10.removeAttribute('class', 'Venḓa');
- langBtn11.removeAttribute('class', 'Khoisan');
- langBtn12.removeAttribute('class', 'English');
- langBtn13.removeAttribute('class', 'other');
+langBtn0.className = 'lang';
+ langBtn1.className= 'lang';
+ langBtn2.className= 'lang';
+ langBtn3.className= 'lang';
+ langBtn4.className= 'lang';
+ langBtn5.className= 'lang';
+
+ langBtn7.className= 'lang';
+ langBtn8.className= 'lang';
+ langBtn9.className= 'lang';
+ langBtn10.className= 'lang';
+ langBtn11.className= 'lang';
+ langBtn12.className= 'lang';
+ langBtn13.className= 'lang';
 } );
 langBtn7.addEventListener("click", function(){
   localStorage.langStored = "Tswana";  
   langBtn7.className = localStorage.langStored;
- langBtn0.removeAttribute('class', 'Sign');
- langBtn1.removeAttribute('class', 'Zulu');
- langBtn2.removeAttribute('class', 'SePedi');
- langBtn3.removeAttribute('class', 'Shangane');
- langBtn4.removeAttribute('class', 'Ndebele');
- langBtn5.removeAttribute('class', 'Afrikaans');
- langBtn6.removeAttribute('class', 'Sotho');
- langBtn8.removeAttribute('class', 'Xhosa');
- langBtn9.removeAttribute('class', 'Swati');
- langBtn10.removeAttribute('class', 'Venḓa');
- langBtn11.removeAttribute('class', 'Khoisan');
- langBtn12.removeAttribute('class', 'English');
- langBtn13.removeAttribute('class', 'other');
+langBtn0.className = 'lang';
+ langBtn1.className= 'lang';
+ langBtn2.className= 'lang';
+ langBtn3.className= 'lang';
+ langBtn4.className= 'lang';
+ langBtn5.className= 'lang';
+ langBtn6.className= 'lang';
+ langBtn8.className= 'lang';
+ langBtn9.className= 'lang';
+ langBtn10.className= 'lang';
+ langBtn11.className= 'lang';
+ langBtn12.className= 'lang';
+ langBtn13.className= 'lang';
 } );
 langBtn8.addEventListener("click", function(){
   localStorage.langStored = "Xhosa"; 
   langBtn8.className = localStorage.langStored;
- langBtn0.removeAttribute('class', 'Sign');
- langBtn1.removeAttribute('class', 'Zulu');
- langBtn2.removeAttribute('class', 'SePedi');
- langBtn3.removeAttribute('class', 'Shangane');
- langBtn4.removeAttribute('class', 'Ndebele');
- langBtn5.removeAttribute('class', 'Afrikaans');
- langBtn6.removeAttribute('class', 'Sotho');
- langBtn7.removeAttribute('class', 'Tswana');
- langBtn9.removeAttribute('class', 'Swati');
- langBtn10.removeAttribute('class', 'Venḓa');
- langBtn11.removeAttribute('class', 'Khoisan');
- langBtn12.removeAttribute('class', 'English');
- langBtn13.removeAttribute('class', 'other');
+ langBtn0.className = 'lang';
+ langBtn1.className= 'lang';
+ langBtn2.className= 'lang';
+ langBtn3.className= 'lang';
+ langBtn4.className= 'lang';
+ langBtn5.className= 'lang';
+ langBtn6.className= 'lang';
+ langBtn7.className= 'lang';
+ langBtn9.className= 'lang';
+ langBtn10.className= 'lang';
+ langBtn11.className= 'lang';
+ langBtn12.className= 'lang';
+ langBtn13.className= 'lang';
 } );
 langBtn9.addEventListener("click", function(){
   localStorage.langStored = "Swati"; 
   langBtn9.className = localStorage.langStored;  
- langBtn0.removeAttribute('class', 'Sign');
- langBtn1.removeAttribute('class', 'Zulu');
- langBtn2.removeAttribute('class', 'SePedi');
- langBtn3.removeAttribute('class', 'Shangane');
- langBtn4.removeAttribute('class', 'Ndebele');
- langBtn5.removeAttribute('class', 'Afrikaans');
- langBtn6.removeAttribute('class', 'Sotho');
- langBtn7.removeAttribute('class', 'Tswana');
- langBtn8.removeAttribute('class', 'Xhosa');
- langBtn10.removeAttribute('class', 'Venḓa');
- langBtn11.removeAttribute('class', 'Khoisan');
- langBtn12.removeAttribute('class', 'English');
- langBtn13.removeAttribute('class', 'other');
+langBtn0.className = 'lang';
+ langBtn1.className= 'lang';
+ langBtn2.className= 'lang';
+ langBtn3.className= 'lang';
+ langBtn4.className= 'lang';
+ langBtn5.className= 'lang';
+ langBtn6.className= 'lang';
+ langBtn7.className= 'lang';
+ langBtn8.className= 'lang';
+
+ langBtn10.className= 'lang';
+ langBtn11.className= 'lang';
+ langBtn12.className= 'lang';
+ langBtn13.className= 'lang';
 } );
 langBtn10.addEventListener("click", function(){
-  localStorage.langStored = "Venḓa";  
+  localStorage.langStored = "Venda";  
   langBtn10.className = localStorage.langStored;
- langBtn0.removeAttribute('class', 'Sign');
- langBtn1.removeAttribute('class', 'Zulu');
- langBtn2.removeAttribute('class', 'SePedi');
- langBtn3.removeAttribute('class', 'Shangane');
- langBtn4.removeAttribute('class', 'Ndebele');
- langBtn5.removeAttribute('class', 'Afrikaans');
- langBtn6.removeAttribute('class', 'Sotho');
- langBtn7.removeAttribute('class', 'Tswana');
- langBtn8.removeAttribute('class', 'Xhosa');
- langBtn9.removeAttribute('class', 'Swati');
- langBtn11.removeAttribute('class', 'Khoisan');
- langBtn12.removeAttribute('class', 'English');
- langBtn13.removeAttribute('class', 'other');
+ langBtn0.className = 'lang';
+ langBtn1.className= 'lang';
+ langBtn2.className= 'lang';
+ langBtn3.className= 'lang';
+ langBtn4.className= 'lang';
+ langBtn5.className= 'lang';
+ langBtn6.className= 'lang';
+ langBtn7.className= 'lang';
+ langBtn8.className= 'lang';
+ langBtn9.className= 'lang';
+ langBtn11.className= 'lang';
+ langBtn12.className= 'lang';
+ langBtn13.className= 'lang';
 } );
 langBtn11.addEventListener("click", function(){
   localStorage.langStored = "Khoisan"; 
   langBtn11.className = localStorage.langStored;
- langBtn0.removeAttribute('class', 'Sign');
- langBtn1.removeAttribute('class', 'Zulu');
- langBtn2.removeAttribute('class', 'SePedi');
- langBtn3.removeAttribute('class', 'Shangane');
- langBtn4.removeAttribute('class', 'Ndebele');
- langBtn5.removeAttribute('class', 'Afrikaans');
- langBtn6.removeAttribute('class', 'Sotho');
- langBtn7.removeAttribute('class', 'Tswana');
- langBtn8.removeAttribute('class', 'Xhosa');
- langBtn9.removeAttribute('class', 'Swati');
- langBtn10.removeAttribute('class', 'Venḓa');
- langBtn12.removeAttribute('class', 'English');
- langBtn13.removeAttribute('class', 'other');
+ langBtn0.className = 'lang';
+ langBtn1.className= 'lang';
+ langBtn2.className= 'lang';
+ langBtn3.className= 'lang';
+ langBtn4.className= 'lang';
+ langBtn5.className= 'lang';
+ langBtn6.className= 'lang';
+ langBtn7.className= 'lang';
+ langBtn8.className= 'lang';
+ langBtn9.className= 'lang';
+ langBtn10.className= 'lang';
+ langBtn12.className= 'lang';
+ langBtn13.className= 'lang';
 } );
 langBtn12.addEventListener("click", function(){
   localStorage.langStored = "English"; 
   langBtn12.className = localStorage.langStored;
-   langBtn0.removeAttribute('class', 'Sign');
- langBtn1.removeAttribute('class', 'Zulu');
- langBtn2.removeAttribute('class', 'SePedi');
- langBtn3.removeAttribute('class', 'Shangane');
- langBtn4.removeAttribute('class', 'Ndebele');
- langBtn5.removeAttribute('class', 'Afrikaans');
- langBtn6.removeAttribute('class', 'Sotho');
- langBtn7.removeAttribute('class', 'Tswana');
- langBtn8.removeAttribute('class', 'Xhosa');
- langBtn9.removeAttribute('class', 'Swati');
- langBtn10.removeAttribute('class', 'Venḓa');
- langBtn11.removeAttribute('class', 'Khoisan');
- langBtn13.removeAttribute('class', 'other');
+langBtn0.className = 'lang';
+ langBtn1.className= 'lang';
+ langBtn2.className= 'lang';
+ langBtn3.className= 'lang';
+ langBtn4.className= 'lang';
+ langBtn5.className= 'lang';
+ langBtn6.className= 'lang';
+ langBtn7.className= 'lang';
+ langBtn8.className= 'lang';
+ langBtn9.className= 'lang';
+ langBtn10.className= 'lang';
+ langBtn11.className= 'lang';
+ langBtn13.className= 'lang';
 } );
 langBtn13.addEventListener("click", function(){
  
  localStorage.langStored = "other"; 
   langBtn13.className = localStorage.langStored;
-  langBtn0.removeAttribute('class', 'Sign');
- langBtn1.removeAttribute('class', 'Zulu');
- langBtn2.removeAttribute('class', 'SePedi');
- langBtn3.removeAttribute('class', 'Shangane');
- langBtn4.removeAttribute('class', 'Ndebele');
- langBtn5.removeAttribute('class', 'Afrikaans');
- langBtn6.removeAttribute('class', 'Sotho');
- langBtn7.removeAttribute('class', 'Tswana');
- langBtn8.removeAttribute('class', 'Xhosa');
- langBtn9.removeAttribute('class', 'Swati');
- langBtn10.removeAttribute('class', 'Venḓa');
- langBtn11.removeAttribute('class', 'Khoisan');
- langBtn12.removeAttribute('class', 'English');
+  langBtn0.className = 'lang';
+ langBtn1.className= 'lang';
+ langBtn2.className= 'lang';
+ langBtn3.className= 'lang';
+ langBtn4.className= 'lang';
+ langBtn5.className= 'lang';
+ langBtn6.className= 'lang';
+ langBtn7.className= 'lang';
+ langBtn8.className= 'lang';
+ langBtn9.className= 'lang';
+ langBtn10.className= 'lang';
+ langBtn11.className= 'lang';
+ langBtn12.className= 'lang';
 
 } );
+
