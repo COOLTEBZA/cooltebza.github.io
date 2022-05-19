@@ -10,5 +10,3 @@ var chead =`<meta charset="utf-8">
 <link href="css/bodystyle.css" rel="stylesheet" type="text/css">
 
 <title id="title">Cooltebza | Home </title>`;
-
-
