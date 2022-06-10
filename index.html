@@ -1,11 +1,56 @@
+<!DOCTYPE html>
 <html>
-<head id="chead"></head>
+<head id="chead0"></head>
 
 <body >
-<nav id="nav" ></nav>
-<div id="root"></div>
+
+<nav id="nav0" ></nav>
+<div id="root0">
 
 
+
+</div>
+<a href id="linkHomePage"></a>
+
+<script src='js/locations.js'></script>
+<script>
+function validateAccess(){
+
+localStorage.name_user = document.getElementById("user_name").value;
+localStorage.valid_user = document.getElementById("user_location").value.toLowerCase();
+
+verifyEngineLimitedAccessGranted();
+}
+
+for (i = 0; i < objPeople.length; i++) {
+if (localStorage.valid_user == objPeople[i].locationList) {
+verifyEngineLimitedAccessGranted();
+}
+ }
+
+
+
+ function verifyEngineLimitedAccessGranted() {
+ 
+ for (i = 0; i < objPeople.length; i++) {
+if (localStorage.valid_user == objPeople[i].locationList) {
+ var x = document.getElementById("linkHomePage");
+x.href = 'items/home.html';
+x.click();
+ var c = document.getElementById("output");
+c.innerHTML = localStorage.valid_user+" Limited access granted!";
+}else{document.getElementById("output").innerHTML = " No Limited access !";}
+}
+ }
+ 
+  function resetBtn() {
+ 
+
+ }
+ 
+
+
+</script>
 <script src='js/images.js'></script>
 <script src='js/nav.js'></script>
 <script src='js/header.js'></script>
@@ -16,5 +61,7 @@
 <script src='js/func_word.js'></script>
 <script src='js/func_search.js'></script>
 <script src='js/languageBtns.js'></script>
-<div id="sfctcnttkhep1tgynxeulgw2z2zbzjm66cb"></div> <script type="text/javascript" src="https://counter9.stat.ovh/private/counter.js?c=tcnttkhep1tgynxeulgw2z2zbzjm66cb&down=async" async></script> <noscript><a href="https://www.freecounterstat.com" title="hit counter"><img src="https://counter9.stat.ovh/private/freecounterstat.php?c=tcnttkhep1tgynxeulgw2z2zbzjm66cb" border="0" title="hit counter" alt="hit counter"></a></noscript></body>
+
+</body>
 </html>
+
