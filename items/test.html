@@ -1,0 +1,70 @@
+<html>
+<head>test</head>
+
+<body >
+
+<div>
+<input type="text" id="test1"/>
+<input type="text"  id="test2"/>
+<button onclick="test">test</button>
+</div>
+
+
+<script>
+var objPeople = [
+ 
+ 
+ {locationList: "Limpopo"},
+ {locationList: "gauteng"},
+ 
+ {locationList: "kwathema"},
+ {locationList: "nigel"},
+ {locationList: "tembisa"},
+ {locationList: "eastrand"},
+ {locationList: "vosloorus"},
+ {locationList: "vaal"},
+ {locationList: "tsakane"},
+ {locationList: "langaville"},
+ {locationList: "springs"},
+ 
+ {locationList: "mpumalanga"},
+ 
+ {locationList: "witbank"},
+ {locationList: "middelburg"},
+ 
+ {locationList: "freestate"},
+ {locationList: "westerncape"},
+ {locationList: "easterncape"},
+ {locationList: "northerncape"},
+ {locationList: "northwest"},
+ {locationList: "kwazulunatal"}
+ ];
+function validateAccess(){
+
+localStorage.name_user = document.getElementById("test1").value;
+localStorage.valid_user = document.getElementById("test2").value.toLowerCase();
+
+}
+
+
+
+if(localStorage.valid_user == "mzansi"){limitedAccess();}else{}
+
+{
+
+ function verifyEngineLimitedAccessGranted() {
+ for (i = 0; i < objPeople.length; i++) {
+if (localStorage.valid_user == objPeople[i].locationList) {
+console.log("Limited access granted!");
+ var x = document.getElementById("linkHomePage");
+x.href = 'items/home.html';
+x.click();
+return
+}
+ }
+ }
+</script>
+
+
+</body>
+</html>
