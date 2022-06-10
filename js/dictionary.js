@@ -56,7 +56,38 @@ document.getElementById("cintent4").innerHTML =
 
 
 
+
 /**
+
+if( al0 == "a"){ document.getElementById("").innerHTML = "";}
+if( al0 == "b"){ document.getElementById("").innerHTML = "";}
+if( al0 == "c"){ document.getElementById("").innerHTML = "";}
+if( al0 == "d"){ document.getElementById("").innerHTML = "";}
+if( al0 == "e"){ document.getElementById("").innerHTML = "";}
+if( al0 == "f"){ document.getElementById("").innerHTML = "";}
+if( al0 == "g"){ document.getElementById("").innerHTML = "";}
+if( al0 == "h"){ document.getElementById("").innerHTML = "";}
+if( al0 == "i"){ document.getElementById("").innerHTML = "";}
+if( al0 == "j"){ document.getElementById("").innerHTML = "";}
+if( al0 == "k"){ document.getElementById("").innerHTML = "";}
+if( al0 == "l"){ document.getElementById("").innerHTML = "";}
+if( al0 == "m"){ document.getElementById("").innerHTML = "";}
+if( al0 == "n"){ document.getElementById("").innerHTML = "";}
+if( al0 == "o"){ document.getElementById("").innerHTML = "";}
+if( al0 == "p"){ document.getElementById("").innerHTML = "";}
+if( al0 == "q"){ document.getElementById("").innerHTML = "";}
+if( al0 == "r"){ document.getElementById("").innerHTML = "";}
+if( al0 == "s"){ document.getElementById("").innerHTML = "";}
+if( al0 == "t"){ document.getElementById("").innerHTML = "";}
+if( al0 == "u"){ document.getElementById("").innerHTML = "";}
+if( al0 == "v"){ document.getElementById("").innerHTML = "";}
+if( al0 == "w"){ document.getElementById("").innerHTML = "";}
+if( al0 == "x"){ document.getElementById("").innerHTML = "";}
+if( al0 == "y"){ document.getElementById("").innerHTML = "";}
+if( al0 == "z"){ document.getElementById("").innerHTML = "";}
+
+document.getElementById("home").innerHTML = "Khaya";
+
 this.node.classList.remove('active');
 this.node.classList.add('active');
 this.node.classList.push('active');
