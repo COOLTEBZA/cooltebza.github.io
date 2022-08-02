@@ -55,7 +55,7 @@ var cNav = `
           </li>
           <li style="float:right;" class="li npbtn2" >
 		      <a href="javascript:void(0)" class="a dropbtn4" onclick="my4Function()">Settings</a>
-            <div  class="dropdown4-content" id="myDropdown4">
+            <div  class="dropdown4-content" style="width: 300px;" id="myDropdown4">
              <a class="a" href="#">
 			 <div >Theme</div> 
 			 <div> <select id="3" onchange="keyColor()">
@@ -71,7 +71,7 @@ var cNav = `
  </select></div>
 			 </a>
               <a class="a" href="#">Tone</a>
-              <a class="a" href="#">Account</a>
+              <a class="a" href="#">Account</a><a class="a" onclick="settings4()">⚔</a>
             </div>
 		  </li>
 		  
