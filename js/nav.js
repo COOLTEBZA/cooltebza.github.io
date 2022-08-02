@@ -68,7 +68,12 @@ window.onclick = function(e) {
             }
         }
     }
-	if (!e.target.matches('.dropbtn4')) {
+	
+}
+
+
+function settings4(){
+if (!e.target.matches('.dropbtn4')) {
         var i;
         for (i = 0; i < dropdowns4.length; i++) {
             var openDropdown = dropdowns4[i];
