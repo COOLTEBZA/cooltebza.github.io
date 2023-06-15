@@ -6,12 +6,12 @@
  <style id="style">
 #intro{
 width: 100%;
- height: 25px;
+ height: 50px;
  border: 1px solid silver;
  background: gray;
 }
   body{
-   background: #0d117;
+   background-color: #0d1117;
   }
   
  </style>
@@ -24,7 +24,7 @@ width: 100%;
 
 <body id="body">
 
-<h1 id="intro">  <span id="counter" style="color: red;" /> new cool features. </h1>
+<h1 id="intro">  <span id="counter" style="color: white;" /> new cool features. </h1>
 
 <script src='js/images.js'></script>
 
@@ -48,7 +48,7 @@ var e_hrsLeft = (e_daysLeft - daysLeft) * 24;
 var hrsLeft = Math.floor(e_hrsLeft);
 var minsLeft = Math.floor((e_hrsLeft - hrsLeft) * 60);
 
-     timeCount.innerHTML =  "CountDown The next update is in : " +yearsLeft + " years " + daysLeft + " days " + hrsLeft + " hours " + minsLeft + " minutes";
+     timeCount.innerHTML =  "CountDown The next update is in : "+ daysLeft + " days " + hrsLeft + " hours " + minsLeft + " minutes" + today.getSeconds() + " seconds";
     }
     setTimeout(updateCountDown, 1000);
 
