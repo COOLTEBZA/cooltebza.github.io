@@ -2,7 +2,7 @@
 <html>
 <head id="head">
 
- <title id="title"></title>
+ <title id="title">Cooltebza</title>
  <style id="style">
 #intro{
 width: 100%;
@@ -19,69 +19,32 @@ width: 100%;
 
 <body id="body">
 
-<h1 id="intro">  <span id="counter" /> Dayas  <span id="time" /> unit a new update</h1>
-
-
-
- 
-
-  <script type="text/javascript">
-    function daysDifference($startDate, $endDate) {
-      oneDay = 24*60*60*1000;
-      return Math.ceil(($endDate.getTime() - $startDate.getTime()) / oneDay);  
-    }
-
-    // 2015/01/01
-    $startDate = new Date(2023, 6, 15);
-    // 2015/12/31
-    $endDate = new Date(2023, 6, 30);
-    $today = new Date();
-    document.getElementById("counter").innerHTML = 'Day ' + daysDifference($startDate, $today) + ': ' + daysDifference($today, $endDate) + ' days left';
-  </script>
-
+<h1 id="intro">  <span id="counter" style="color: red;" /> new cool features. </h1>
 
 <script src='#'></script>
 
 <script type="text/javascript">
- var arrObj = [01,02,03,04,05,06,07,08,09,10,
-   11,12,13,14,15,16,17,18,19,20,
- 21,22,23,24,25,26,27,28,29,30,
- 31,32,33,34,35,36,37,38,39,40,
- 41,42,43,44,45,46,47,48,49,50,
- 51,52,53,54,55,56,57,58,59,60
- ];
- var timeCount = document.getElementById("time");
-    var sec=0;
-    var min=0;
-    var hour=0;
- var count= 0;
- 
-    function countDown(){
-       count -= 1;
-       if(count==60){
-         count = 0;
-        min ++;
-       }else{
-        if(sec <= 0){
-         sec += 1
-        }else{
-         sec += 1
-        }
-       }
-     
-      if(min==0){
-           
-       } else{
-        
-       }
-     if(hour==0){
-           
-       }else{
-        
-       }
-     
+var timeCount = document.getElementById("counter");
+function updateCountDown()
+ var today = new Date();
+
+var BigDay = new Date("June 30, 2023");
+var msPerDay = 24 * 60 * 60 * 1000;
+var timeLeft = (BigDay.getTime() - today.getTime());
+var e_daysLeft = timeLeft / msPerDay;
+var daysLeft = Math.floor(e_daysLeft);
+var yearsLeft = 0;
+if (daysLeft > 365) {
+  yearsLeft = Math.floor(daysLeft / 365);
+  daysLeft = daysLeft % 365;
+}
+var e_hrsLeft = (e_daysLeft - daysLeft) * 24;
+var hrsLeft = Math.floor(e_hrsLeft);
+var minsLeft = Math.floor((e_hrsLeft - hrsLeft) * 60);
+
+     timeCount.innerHTML =  "CountDown The next update is in : " +yearsLeft + " years " + daysLeft + " days " + hrsLeft + " hours " + minsLeft + " minutes";
     }
-    setTimeout(countDown ,1000);
+    setTimeout(updateCountDown, 1000);
 
 </script>
 <div id="sfctcnttkhep1tgynxeulgw2z2zbzjm66cb"></div> <script type="text/javascript" src="https://counter9.stat.ovh/private/counter.js?c=tcnttkhep1tgynxeulgw2z2zbzjm66cb&down=async" async></script> <noscript><a href="https://www.freecounterstat.com" title="hit counter"><img src="https://counter9.stat.ovh/private/freecounterstat.php?c=tcnttkhep1tgynxeulgw2z2zbzjm66cb" border="0" title="hit counter" alt="hit counter"></a></noscript>
