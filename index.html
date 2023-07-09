@@ -1,67 +1,116 @@
-<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head id="head">
-
- <title id="title">Cooltebza</title>
- <style id="style">
-#intro{
-width: 100%;
- height: 50px;
- border: 1px solid silver;
- background-color: #21262d;
+    <head id="head">
+        <title id="title">Cooltebza - timeCount</title>
+        <style id="style">
+            #intro {
+                width: 100%;
+                height: 12%;
+				font-size: 1.71em;
+                border: 1px solid silver;
+                background-color: #21262d;
+				box-shadow: inset -1px -30px 90px 3px black;
+            }
+			ul > li {
+    color: seashell;
 }
-  body{
-   background-color: #0d1117;
-  }
-  
- </style>
+ul > li > b{
+    border-bottom: 1px solid blueviolet;
+	padding-right: 215px;
+}
 
-  <link rel="icon" id="icon" href="" title="Cooltebza">
-  
+ul, menu, dir {
+    display: block;list-style-type: none;}
+    
+            body {
+                background-color: #0d1117;
+            }
+/* ScoreCard Styling */
+#scorecount {
+    position: absolute;
+    top:100px;
+    right:20px;
+    border: 1px solid silver;
+    background-color: #21262d;
+	box-shadow: inset -1px -30px 90px 3px black;
+    padding: 28px;
+    border-radius: 20px;
+    color: white;
+}
+        </style>
+        <link rel="icon" id="icon" href="" title="Cooltebza">
+    </head>
+    <body id="body">
+	<h1 id="intro">
+            <span id="counter" style="color: white;"></span>
+        </h1><br/>
+	
+	<div class="container">
       
+        <div id="scorecount">Your visit score : <span id="visitorCount"></span></div>
 
-</head>
-
-<body id="body">
-
-<h1 id="intro">  <span id="counter" style="color: white;" /> new cool features. </h1>
-
-<script src='js/images.js'></script>
-
-<script type="text/javascript">
- document.getElementById("icon").href= c_icon;
+    </div>
+        
+		<ul>
+		<li><b>Logs</b></li>
+		<li>New AI ChatBot Under-Development</li>
+		<li>New Live Poster comments Under-Development</li>
+		</ul>
+        <script type="text/javascript">//document.getElementById("icon").href= c_icon;
+//NaN = Not Available Never/Null
 var timeCount = document.getElementById("counter");
+var visitorCount = document.getElementById("visitorCount");
+var today = new Date();
+var c_mSecsLeft = 24;
+var c_secsLeft = today.getSeconds();
+var c_count = today.getMilliseconds();
 
- var today = new Date();
- var c_Time;
- function updateCountDown(){
-  if(today.getSeconds() == 60 ){
-   c_Time = 60;
-  }else{
-   c_Time--;
-  }
- 
-var BigDay = new Date("June 30, 2023");
-var msPerDay = 24 * 60 * 60 * 1000;
-var timeLeft = (BigDay.getTime() - today.getTime());
-var e_daysLeft = timeLeft / msPerDay;
-var daysLeft = Math.floor(e_daysLeft);
-var yearsLeft = 0;
-if (daysLeft > 365) {
-  yearsLeft = Math.floor(daysLeft / 365);
-  daysLeft = daysLeft % 365;
+ if (localStorage.CooltebzaVisitScore.length <= 0) {
+       visitorCount.innerHTML = "New Here Welcome";
+    }else{
+visitorCount.innerHTML = "Welcome Back";
+	}
+function updateVisitorCountUp() {
+        visitorCount.innerHTML = localStorage.CooltebzaVisitScore;
+		localStorage.CooltebzaVisitScore++;
 }
-var e_hrsLeft = (e_daysLeft - daysLeft) * 24;
-var hrsLeft = Math.floor(e_hrsLeft);
-var minsLeft = Math.floor((e_hrsLeft - hrsLeft) * 60);
-
-     timeCount.innerHTML =  "CountDown The next update is in : "+ daysLeft + " days : " + hrsLeft + " hours : " + minsLeft + " minutes : " + c_Time + " seconds";
+setTimeout(updateVisitorCountUp, 1000);
+function updateCountDown() {
+    if (c_secsLeft <= 0) {
+        c_secsLeft = 60;
+    } else {
+        c_secsLeft--;
+    }
+    
     setTimeout(updateCountDown, 1000);
+	
 }
-    updateCountDown();
+function updateCountDownMilli() {
+    if (c_mSecsLeft <= 0) {
+        c_mSecsLeft = 24;
+    } else {
+        c_mSecsLeft -= 1;
+    }
+	  
+	var BigDay = new Date("July 31, 2023");
+    var msPerDay = 24 * 60 * 60 * 1000;
+    var timeLeft = (BigDay.getTime() - today.getTime());
+    var e_daysLeft = timeLeft / msPerDay;
+    var daysLeft = Math.floor(e_daysLeft);
+    var yearsLeft = 0;
+    if (daysLeft > 365) {
+        yearsLeft = Math.floor(daysLeft / 365);
+        daysLeft = daysLeft % 365;
+    }
+    var e_hrsLeft = (e_daysLeft - daysLeft) * 24;
+    var hrsLeft = Math.floor(e_hrsLeft);
+    var minsLeft = Math.floor((e_hrsLeft - hrsLeft) * 60);
+	timeCount.innerHTML = "CountDown The next new beta version update is in : " + daysLeft + " days : " + hrsLeft + " hours : " + minsLeft + " minutes : " + c_secsLeft + " seconds : " + c_mSecsLeft + " Milliseconds";
+setTimeout(updateCountDownMilli, 100);  
+}
 
-</script>
-<div id="sfctcnttkhep1tgynxeulgw2z2zbzjm66cb"></div> <script type="text/javascript" src="https://counter9.stat.ovh/private/counter.js?c=tcnttkhep1tgynxeulgw2z2zbzjm66cb&down=async" async></script> <noscript><a href="https://www.freecounterstat.com" title="hit counter"><img src="https://counter9.stat.ovh/private/freecounterstat.php?c=tcnttkhep1tgynxeulgw2z2zbzjm66cb" border="0" title="hit counter" alt="hit counter"></a></noscript>
+updateCountDown();
+updateCountDownMilli();</script>
+    <div id="sfctcnttkhep1tgynxeulgw2z2zbzjm66cb"></div> <script type="text/javascript" src="https://counter9.stat.ovh/private/counter.js?c=tcnttkhep1tgynxeulgw2z2zbzjm66cb&down=async" async></script> <noscript><a href="https://www.freecounterstat.com" title="hit counter"><img src="https://counter9.stat.ovh/private/freecounterstat.php?c=tcnttkhep1tgynxeulgw2z2zbzjm66cb" border="0" title="hit counter" alt="hit counter"></a></noscript>
 </body>
 </html>
-
