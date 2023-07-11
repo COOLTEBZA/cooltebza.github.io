@@ -65,15 +65,17 @@ var c_mSecsLeft = 24;
 var c_secsLeft = today.getSeconds();
 var c_count = today.getMilliseconds();
 
- if (localStorage.CooltebzaVisitScore == "NaN") {
+ if (localStorage.CooltebzaVisitScore == "NaN" || localStorage.CooltebzaVisitScore == "undefined" ) {
        visitorCount.innerHTML = "New Here Welcome";
-	 localStorage.CooltebzaVisitScore = 0;
+       localStorage.CooltebzaVisitScore = 0;
     }else{
 visitorCount.innerHTML = "Welcome Back";
+
 	}
 function updateVisitorCountUp() {
+	localStorage.CooltebzaVisitScore++;
         visitorCount.innerHTML = localStorage.CooltebzaVisitScore;
-		localStorage.CooltebzaVisitScore++;
+		
 }
 setTimeout(updateVisitorCountUp, 1000);
 function updateCountDown() {
@@ -87,10 +89,12 @@ function updateCountDown() {
 	
 }
 function updateCountDownMilli() {
-    if (c_mSecsLeft <= 0) {
-        c_mSecsLeft = 24;
+    
+if (c_mSecsLeft <= 0) {
+        c_mSecsLeft = 1000;
+		
     } else {
-        c_mSecsLeft -= 1;
+        c_mSecsLeft -= 329*0.303951367781155;
     }
 	  
 	var BigDay = new Date("July 31, 2023");
