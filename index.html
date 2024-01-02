@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head id="head">
-        <title id="title">Cooltebza - timeCount</title>
+        <title id="title">Cooltebza - Home Page</title>
         <style id="style">
             #intro {
                 width: 100%;
                 height: 12%;
+				font-size: 1.71em;
+                border: 1px solid silver;
+                background-color: #21262d;
+				box-shadow: inset -1px -30px 90px 3px black;
+            }
+		 #intro {
+                width: 100%;
+                height: 10%;
 				font-size: 1.71em;
                 border: 1px solid silver;
                 background-color: #21262d;
@@ -41,6 +49,9 @@ ul, menu, dir {
         <link rel="icon" id="icon" href="" title="Cooltebza">
     </head>
     <body id="body">
+	    <header id="intro">
+            Welcome World! to new year 2024 Thanks for visit
+        </header><br/>
 	<h1 id="intro">
             <span id="counter" style="color: white;"></span>
         </h1><br/>
@@ -60,6 +71,7 @@ ul, menu, dir {
 				<li>2. Hashing/ Salting (Security API)</li>
 				<li>3. Change Text to Number (Converting testing method)</li>
 				<li>4. Crud/Auth (Login/Register Form 100% working fully tested all functions)</li>
+				<li><input type="checkbox">5. Home Upgrading </li>
 			</ul>
 		
 		</li>
@@ -106,7 +118,7 @@ if (c_mSecsLeft <= 0) {
         c_mSecsLeft -= 329*0.303951367781155;
     }
 	  
-	var BigDay = new Date("December 31, 2023");
+	var BigDay = new Date("January 31, 2024");
     var msPerDay = 24 * 60 * 60 * 1000;
     var timeLeft = (BigDay.getTime() - today.getTime());
     var e_daysLeft = timeLeft / msPerDay;
