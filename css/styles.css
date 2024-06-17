@@ -23,7 +23,7 @@ body {
     float: left;
 }
 
-.nav-menu li a {
+.nav-menu li a, .nav-menu li a img{
     display: block;
 	color: auto;
     text-align: center;
