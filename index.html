@@ -1,68 +1,36 @@
-<!DOCTYPE html>
-<html>
-    <head id="head">
-        <title id="title">Cooltebza - Home Page</title>
-        <style id="style">
-            #intro {
-                width: 100%;
-                height: 12%;
-				font-size: 1.71em;
-                border: 1px solid silver;
-                background-color: #21262d;
-				box-shadow: inset -1px -30px 90px 3px black;
-            }
-		 #intro {
-                width: 100%;
-                height: 10%;
-				font-size: 1.71em;
-                border: 1px solid silver;
-                background-color: #21262d;
-				box-shadow: inset -1px -30px 90px 3px black;
-            }
-			ul > li {
-    color: seashell;
-}
-ul > li > b{
-    border-bottom: 1px solid blueviolet;
-	padding-right: 215px;
-}
-
-ul, menu, dir {
-    display: block;list-style-type: none;}
-    
-            body {
-                background-color: #0d1117;
-            }
-/* ScoreCard Styling */
-#scorecount {
-    position: absolute;
-    top:100px;
-    right:20px;
-    border: 1px solid silver;
-    background-color: #21262d;
-	box-shadow: inset -1px -30px 90px 3px black;
-    padding: 28px;
-    border-radius: 20px;
-    color: white;
-}
-        </style>
-        <link rel="icon" id="icon" href="" title="Cooltebza">
-    </head>
-    <body id="body">
-	    <header id="intro">
-            Welcome World! to new year 2024 Thanks for visit
-        </header><br/>
-	<h1 id="intro">
-            <span id="counter" style="color: white;"></span>
-        </h1><br/>
-	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooltebza - Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-menu">
+	<li><a href="#">Cooltebza</a></li>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Menu</a>
+                <div class="dropdown-content">
+                    <a href="#" class="dropdown-item">Link 1</a>
+                    <a href="#" class="dropdown-item">Link 2</a>
+                    <a href="#" class="dropdown-item">Link 3</a>
+					
+                </div>
+            </li>
+			
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 	<div class="container">
       
-        <div id="scorecount">Your visit score : <span id="visitorCount"></span></div>
-
+       <div id="countdown">
+        <p id="countdown-timer"></p>
     </div>
-        
-		<ul>
+<ul id="m">
 		<li><b>Logs(My Portfolio)</b></li>
 		<li>New AI ChatBot Under-Development
 			<ul>
@@ -81,67 +49,10 @@ ul, menu, dir {
 		</li>
 		<li>New Live Poster comments Under-Development</li>
 		</ul>
-<script type="text/javascript">
-//document.getElementById("icon").href= c_icon;
-//NaN = Not Available Never/Null
-var timeCount = document.getElementById("counter");
-var visitorCount = document.getElementById("visitorCount");
-var today = new Date();
-var c_mSecsLeft = 24;
-var c_secsLeft = today.getSeconds();
-var c_count = today.getMilliseconds();
-
- if (localStorage.CooltebzaVisitScore == "NaN" || localStorage.CooltebzaVisitScore == "undefined" ) {
-       visitorCount.innerHTML = "New Here Welcome";
-       localStorage.CooltebzaVisitScore = 0;
-    }else{
-visitorCount.innerHTML = "Welcome Back";
-
-	}
-function updateVisitorCountUp() {
-	localStorage.CooltebzaVisitScore++;
-        visitorCount.innerHTML = localStorage.CooltebzaVisitScore;
-		
-}
-setTimeout(updateVisitorCountUp, 1000);
-function updateCountDown() {
-    if (c_secsLeft <= 0) {
-        c_secsLeft = 60;
-    } else {
-        c_secsLeft--;
-    }
-    
-    setTimeout(updateCountDown, 1000);
+    </div>
 	
-}
-function updateCountDownMilli() {
-    
-if (c_mSecsLeft <= 0) {
-        c_mSecsLeft = 1000;
-		
-    } else {
-        c_mSecsLeft -= 329*0.303951367781155;
-    }
-	  
-	var BigDay = new Date("May 30, 2024");
-    var msPerDay = 24 * 60 * 60 * 1000;
-    var timeLeft = (BigDay.getTime() - today.getTime());
-    var e_daysLeft = timeLeft / msPerDay;
-    var daysLeft = Math.floor(e_daysLeft);
-    var yearsLeft = 0;
-    if (daysLeft > 365) {
-        yearsLeft = Math.floor(daysLeft / 365);
-        daysLeft = daysLeft % 365;
-    }
-    var e_hrsLeft = (e_daysLeft - daysLeft) * 24;
-    var hrsLeft = Math.floor(e_hrsLeft);
-    var minsLeft = Math.floor((e_hrsLeft - hrsLeft) * 60);
-	timeCount.innerHTML = "CountDown The next new beta version update is in : " + daysLeft + " days : " + hrsLeft + " hours : " + minsLeft + " minutes : " + c_secsLeft + " seconds : " + c_mSecsLeft + " Milliseconds";
-setTimeout(updateCountDownMilli, 100);  
-}
 
-updateCountDown();
-updateCountDownMilli();</script>
-    <div id="sfctcnttkhep1tgynxeulgw2z2zbzjm66cb"></div> <script type="text/javascript" src="https://counter9.stat.ovh/private/counter.js?c=tcnttkhep1tgynxeulgw2z2zbzjm66cb&down=async" async></script> <noscript><a href="https://www.freecounterstat.com" title="hit counter"><img src="https://counter9.stat.ovh/private/freecounterstat.php?c=tcnttkhep1tgynxeulgw2z2zbzjm66cb" border="0" title="hit counter" alt="hit counter"></a></noscript>
+    <script src="script.js"></script>
 </body>
 </html>
+<div id="sfctcnttkhep1tgynxeulgw2z2zbzjm66cb"></div> <script type="text/javascript" src="https://counter9.stat.ovh/private/counter.js?c=tcnttkhep1tgynxeulgw2z2zbzjm66cb&down=async" async></script> <noscript><a href="https://www.freecounterstat.com" title="hit counter"><img src="https://counter9.stat.ovh/private/freecounterstat.php?c=tcnttkhep1tgynxeulgw2z2zbzjm66cb" border="0" title="hit counter" alt="hit counter"></a></noscript>
